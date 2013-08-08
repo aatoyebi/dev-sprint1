@@ -10,10 +10,11 @@ def koch(t, length, angle):
 
 
 def transition(t, length, angle):
-	bk(t, length/3)
-	rt(t, 2*angle)
-	fd(t, length/3)
-	lt(t, angle)
+	for i in range(4):
+		bk(t, length/3)
+		rt(t, 2*angle)
+		fd(t, length/3)
+		lt(t, angle)
 
 def snowflake(t, length, angle):
 		koch(t, length, angle)
@@ -23,9 +24,6 @@ def snowflake(t, length, angle):
 		koch(t, length, angle)
 		rt(t, 2*angle)
 		transition(t, length, angle)
-		transition(t, length, angle)
-		transition(t, length, angle)
-		transition(t, length, angle)
 		koch(t, length, angle)
 		rt(t, 2*angle)
 		koch(t, length, angle)
@@ -34,9 +32,6 @@ def snowflake(t, length, angle):
 		rt(t, 2*angle)
 		koch(t, length, angle)
 		rt(t, 2*angle)
-		transition(t, length, angle)
-		transition(t, length, angle)
-		transition(t, length, angle)
 		transition(t, length, angle)
 		rt(t, 6*angle)
 		koch(t, length, angle)
@@ -47,9 +42,6 @@ def snowflake(t, length, angle):
 		rt(t, 2*angle)
 		koch(t, length, angle)
 		rt(t, 2*angle)
-		transition(t, length, angle)
-		transition(t, length, angle)
-		transition(t, length, angle)
 		transition(t, length, angle)
 		koch(t, length, angle)
 
