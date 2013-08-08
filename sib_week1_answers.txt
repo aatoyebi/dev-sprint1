@@ -1,3 +1,25 @@
+
+The route is used to bind a function to a URL, making it easier to remember.
+
+The only route specified in the application is "/".
+
+The home or index method gets called when "/" is used.
+
+@app.route('/world')
+def world:
+	return 'Hello, World'
+
+It will not be executed because __name__ = '__main__' is used to determine if the module is being run as the main program. In this case, the module is being imported from "testingflask.py". Therefore, __name__ will take on the value "testingflask".
+
+The base case is n=0
+
+The simpler form is n-1
+
 *** Cut and paste the for loop here ***
 
+{% for message in message %}
+{{message}}
+{% endfor %}
+
 *** What is the for loop doing? ***
+It created a variable called message that stores the result of looping through each file/folder and displays its name.
